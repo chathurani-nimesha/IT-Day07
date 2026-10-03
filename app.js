@@ -1,1 +1,9 @@
-console.log("Hello");
+//console.log("Hello");
+
+//Random Numbers Generate
+//================================
+
+let num=Math.random()*10+1;
+
+let randomNum=Math.floor(num);
+console.log(randomNum);
