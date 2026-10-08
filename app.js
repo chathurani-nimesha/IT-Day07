@@ -168,16 +168,52 @@
 
 //----------forEach Loop----------------
 
-const productsList = [
-  {name: "bun",inStock: true},
-  {name: "Car",inStock: false},
-  {name: "Bat",inStock:true},
-  {name: "Van", inStock: false},
+// const productsList = [
+//   {name: "bun",inStock: true},
+//   {name: "Car",inStock: false},
+//   {name: "Bat",inStock:true},
+//   {name: "Van", inStock: false},
+// ];
+
+// for(product of productsList){
+//     console.log(product);
+// }
+
+// productsList.forEach(product => console.log(product));
+
+//------------------------------------------------------
+//Sort the array - toSorted method
+//-----------------------------------------------------
+
+const latterLirst =["B","A","D","C"];
+
+let sortAr = latterLirst.toSorted();
+
+console.log(sortAr);
+
+//---------------------------------------
+// Map function
+//---------------------------------------
+
+const employeSalary = [75000,34000,6000,40400];
+console.log("Old Array:");
+console.log(employeSalary);
+
+let newSalaryArray = employeSalary.map(salary => salary*2);
+console.log("New Array:");
+console.log(newSalaryArray);
+
+//-------------------------------------
+// Find Method(searching)
+//-------------------------------------
+
+const studentList = [
+  {id: "001",name:"Amal"},
+  {id: "002",name:"Kamla"},
+  {id: "003",name:"Vimal"},
+  {id: "004",name:"Ranil"}
 ];
 
-for(product of productsList){
-    console.log(product);
-}
+let student = studentList.find(student => student.id === "004");
 
-productsList.forEach(product => console.log(product));
-
+console.log(student);
