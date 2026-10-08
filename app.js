@@ -29,7 +29,6 @@
 //     });
 // }
 
-
 //=======================================
 //  let, var, const
 //=======================================
@@ -45,7 +44,7 @@
 // }
 // console.log(age);
 
-// But it can be used using var variable. but var variables does not destroyed when the program done. Therefore it takes too much space in the RAM. 
+// But it can be used using var variable. but var variables does not destroyed when the program done. Therefore it takes too much space in the RAM.
 
 // {
 //   var age = 12;
@@ -54,7 +53,7 @@
 // }
 // console.log(age);
 
-// let best for the performance. 
+// let best for the performance.
 
 // {
 //   var studentName = "Saman";
@@ -109,7 +108,6 @@
 
 //let inStockItems = products.filter(product => product.instock == false);
 
-
 // Callback Functions--------------------------
 
 // let inStockItems = products.filter(
@@ -126,7 +124,6 @@
 
 //for function use =>
 
-
 // function getSum(num1,num2){
 //   return num1+num2;
 // }
@@ -139,9 +136,7 @@
 
 // console.log(10,20);
 
-
 //----------- Arrow Function --------------------
-
 
 // let getSum = (num1,num2) => {
 //   return num1+num2;
@@ -165,7 +160,6 @@
 
 // console.log(sample("Hi saman"));
 
-
 //----------forEach Loop----------------
 
 // const productsList = [
@@ -185,7 +179,7 @@
 //Sort the array - toSorted method
 //-----------------------------------------------------
 
-const latterLirst =["B","A","D","C"];
+const latterLirst = ["B", "A", "D", "C"];
 
 let sortAr = latterLirst.toSorted();
 
@@ -195,11 +189,11 @@ console.log(sortAr);
 // Map function
 //---------------------------------------
 
-const employeSalary = [75000,34000,6000,40400];
+const employeSalary = [75000, 34000, 6000, 40400];
 console.log("Old Array:");
 console.log(employeSalary);
 
-let newSalaryArray = employeSalary.map(salary => salary*2);
+let newSalaryArray = employeSalary.map((salary) => salary * 2);
 console.log("New Array:");
 console.log(newSalaryArray);
 
@@ -208,13 +202,13 @@ console.log(newSalaryArray);
 //-------------------------------------
 
 const studentList = [
-  {id: "001",name:"Amal"},
-  {id: "002",name:"Kamla"},
-  {id: "003",name:"Vimal"},
-  {id: "004",name:"Ranil"}
+  { id: "001", name: "Amal" },
+  { id: "002", name: "Kamla" },
+  { id: "003", name: "Vimal" },
+  { id: "004", name: "Ranil" },
 ];
 
-let student = studentList.find(student => student.id === "004");
+let student = studentList.find((student) => student.id === "004");
 
 console.log(student);
 
@@ -222,7 +216,26 @@ console.log(student);
 //          Json - JavaScript Object Notation
 //-----------------------------------------------------
 
-fetch("/customers.json").then(res=>res.json()).then(data=>{
-  console.log(data);
-})
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
 
+    let tblTodoList = document.getElementById("tblToDoList");
+
+    let body=""
+
+    data.forEach(element => {
+        body+= `
+                <tr>
+            <td>${element.id}</td>
+            <td>${element.title}</td>
+            <td>${element.userId}</td>
+            <td>${element.completed}</td>
+        </tr>
+        `
+    });
+
+    tblTodoList.innerHTML=body;
+
+  });
