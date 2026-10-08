@@ -12,19 +12,19 @@
 //=======================================
 //Alert display-sweet alert
 //=======================================
-
-function btnGuessNumberOnAction(){
-    Swal.fire({
-  title: "Custom width, padding, color, background.",
-  width: 600,
-  padding: "3em",
-  color: "#716add",
-  background: "#fff url(/images/trees.png)",
-  backdrop: `
-    rgba(0,0,123,0.4)
-    url("/images/nyan-cat.gif")
-    left top
-    no-repeat
-  `
-});
-}
+// function btnGuessNumberOnAction() {
+//     Swal.fire({
+//         title: "Number Guessing...........",
+//         width: 600,
+//         padding: "3em",
+//         color: "#fa5ded",
+//         background: "#fff",
+//         backdrop: `
+//             rgba(0,0,123,0.4)
+//             url("videos/monsters-inc-look-at-those-numbers.gif")
+//             center center
+//             / cover
+//             no-repeat
+//         `
+//     });
+// }
