@@ -74,3 +74,94 @@
 
 // console.log(typeof customerList);
 
+//==================================
+// JS Array Methods
+//==================================
+
+// const customerList = [];
+
+// customerList.push(1);
+// console.log(customerList);
+
+// customerList.push(2);
+// customerList.push(3);
+// customerList.push(4);
+// customerList.push(5);
+// console.log(customerList);
+
+//------------------------------------
+// Reverse array-----------------------
+//-------------------------------------
+
+// let revArray = customerList.reverse();
+// console.log(revArray);
+
+//----------------------------------
+// Filter method----------------------
+//------------------------------------
+
+const products = [
+  {name:"bun",instock: true},
+  {name: "car",instock:false},
+  {name: "Bus",instock:true},
+  {name: "Bike",instock:false}
+];
+
+//let inStockItems = products.filter(product => product.instock == false);
+
+
+// Callback Functions--------------------------
+
+// let inStockItems = products.filter(
+//   function(product){
+//     return productFilter(product)
+//   }
+// )
+
+// function productFilter(product){
+//   return product.inStock == true;
+// }
+
+// console.log(inStockItems);
+
+//for function use =>
+
+
+// function getSum(num1,num2){
+//   return num1+num2;
+// }
+
+//getSum(10,20);
+
+// function getSum = function (num1,num2){
+//   return num1+num2;
+// }
+
+// console.log(10,20);
+
+
+//----------- Arrow Function --------------------
+
+
+// let getSum = (num1,num2) => {
+//   return num1+num2;
+// }
+
+// console.log(getSum(10,20));
+
+// Step 04 ------------------------------------
+// let sample = txtValue =>{
+//   return txtValue;
+// }
+
+// console.log(sample("Hi saman"));
+
+//Step 05-----------------------------
+// let getSum = (num1, num2) => num1+num2;
+// console.log(getSum(10,20));
+
+//Step 06 ----------------------------------------------
+// let sample = txtValue => txtValue;
+
+// console.log(sample("Hi saman"));
+
