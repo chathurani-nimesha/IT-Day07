@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name": "Chathu",
+        "address": "Anuradhapura",
+        "salary": 190000
+    },
+    {
+        "id":2,
+        "name": "Kaveesha",
+        "address": "Colombo",
+        "salary": 20000
+    },
+    {
+        "id":3,
+        "name": "Chandeep",
+        "address": "Anuradhapura",
+        "salary": 194000
+    },
+    {
+        "id":4,
+        "name": "Sameera",
+        "address": "Panadura",
+        "salary": 10000
+    },
+    {
+        "id":5,
+        "name": "Kamal",
+        "address": "Walana",
+        "salary": 23000
+    },
+    {
+        "id":6,
+        "name": "Amal",
+        "address": "Gampaha",
+        "salary": 140000
+    }
+]

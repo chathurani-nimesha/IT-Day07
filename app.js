@@ -217,3 +217,12 @@ const studentList = [
 let student = studentList.find(student => student.id === "004");
 
 console.log(student);
+
+//------------------------------------------------------
+//          Json - JavaScript Object Notation
+//-----------------------------------------------------
+
+fetch("/customers.json").then(res=>res.json()).then(data=>{
+  console.log(data);
+})
+
