@@ -100,12 +100,12 @@
 // Filter method----------------------
 //------------------------------------
 
-const products = [
-  {name:"bun",instock: true},
-  {name: "car",instock:false},
-  {name: "Bus",instock:true},
-  {name: "Bike",instock:false}
-];
+// const products = [
+//   {name:"bun",instock: true},
+//   {name: "car",instock:false},
+//   {name: "Bus",instock:true},
+//   {name: "Bike",instock:false}
+// ];
 
 //let inStockItems = products.filter(product => product.instock == false);
 
@@ -164,4 +164,20 @@ const products = [
 // let sample = txtValue => txtValue;
 
 // console.log(sample("Hi saman"));
+
+
+//----------forEach Loop----------------
+
+const productsList = [
+  {name: "bun",inStock: true},
+  {name: "Car",inStock: false},
+  {name: "Bat",inStock:true},
+  {name: "Van", inStock: false},
+];
+
+for(product of productsList){
+    console.log(product);
+}
+
+productsList.forEach(product => console.log(product));
 
